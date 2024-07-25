@@ -1,0 +1,33 @@
+body {
+  overflow: hidden;
+  background: #dcdcdc;
+}
+
+#avatar{
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+
+#linkColor{
+    color: #fff;
+}
+
+#expandContent{
+    padding-bottom: 455px;
+}
+
+#iconColour{
+    border: none;
+}
+
+.fa-pencil-square-o,.fa-trash-o{
+    color: #964B00;
+}
+
+#modifyLink{
+    color: #964B00;
+    font-size: 50px;
+}

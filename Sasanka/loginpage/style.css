@@ -1,0 +1,154 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Jul 11, 2023, 8:19:21 PM
+    Author     : thanusiyan
+*/
+*{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-family: sans-serif;
+    outline: none;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(180deg, rgba(173, 241, 255, 0.5858718487394958) 0%, rgba(239, 254, 255, 0) 21%, rgba(239, 254, 255, 0) 59%, rgba(146, 236, 255, 1) 100%);;
+}
+.container{
+    position:  absolute;
+    align-items: center;
+    padding: 20px 30px;
+    width: 400px;
+    background: hsl(196, 61%, 20%);
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    box-sizing: border-box;
+}
+.switch{
+    position: absolute;
+    right: 100px;
+    display: flex;
+    border-bottom: 1px solid #fe0066;
+}
+.switch.active{
+    border-bottom: 1px solid #12ff00;
+}
+.switch:after{
+    content: '';
+    height: 6px;
+    width: 60px;
+    background: #fe0066;
+    border-radius: 60px 60px 0 0;
+    position: absolute;
+    bottom: 0;
+    left: 8px;
+    transition: 0.3s ease;
+}
+.switch.active:after{
+    left: 82px;
+    width: 70px;
+    background: #12ff00;
+}
+.login{
+    padding: 5px 12px;
+    background: linear-gradient(45deg,#00d5fc,#046af6);
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.signup{
+    padding: 5px 12px;
+    margin-bottom: 10px;
+    border-radius: 50px;
+    text-align: right;
+    margin-left: 4px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.container .outer{
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+.outer #form{
+    width: 200%;
+    position: relative;
+    display: flex;
+    margin: auto;
+    transition: 0.2s ease-in-out;
+}
+#page{
+    margin: auto;
+    width: 25%;
+}
+.lablen{
+    display: block;
+    margin-bottom: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.element{
+    position: relative;
+}
+.element input{
+    width: 80%;
+    height: 40px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    background: #2a2a2a;
+    border: 1px solid #f5f4f4;
+    padding-left: 40px;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+input::placeholder {
+    color: #d4cdcd;
+    font-size: 20px;
+}
+.element span{
+    position: absolute;
+    left: 11.5%;
+    top: 12px;
+    font-size: 18px;
+}
+#btn{
+    padding: 5px 25px;
+    background: linear-gradient(45deg,#00d5fc,#046af6);
+    border-radius: 50px;
+    font-size: 25px;
+    text-transform: uppercase;
+    border: none;
+    margin-top: 5px;
+    cursor: pointer;
+}
+#btn:active{
+    transform: scale(1.01);
+}
+label{
+    font-size: 20px;
+}
+.heading{
+    align-items: normal;
+}
+
+@media only screen and (max-width: 480px) {
+  main {
+    padding: 10px;
+  }
